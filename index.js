@@ -7,6 +7,8 @@ import Lab5 from "./Lab5/index.js";
 import UserRoutes from "./Kanbas/Users/routes.js";
 import CourseRoutes from "./Kanbas/Courses/routes.js";
 import ModuleRoutes from "./Kanbas/Modules/routes.js";
+import EnrollmentRoutes from "./Kanbas/Enrollments/routes.js";
+import AssignmentRoutes from "./Kanbas/Assignments/routes.js"
 
 const app = express();
 
@@ -37,8 +39,9 @@ Hello(app);
 Lab5(app);
 UserRoutes(app);
 CourseRoutes(app);
-//EnrollmentRoutes(app);
+EnrollmentRoutes(app);
 ModuleRoutes(app);
+AssignmentRoutes(app);
 
 app.listen(process.env.PORT || 4000);
 
